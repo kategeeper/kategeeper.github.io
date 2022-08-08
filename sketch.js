@@ -41,17 +41,17 @@ function mousePressed() {
   }
   endShape();
 
-  beginShape();
-  noFill();
-  stroke(random(255), random(255), random(255));
-  for(let theta = 0; theta <= 360; theta++){
-    let k = theta;
-    let r = width/2 * sin(n*k);
-    let x = r * cos(k);
-    let y = r * sin(k);
-    vertex(x, y);
-  }
-  endShape();
+//   beginShape();
+//   noFill();
+//   stroke(random(255), random(255), random(255));
+//   for(let theta = 0; theta <= 360; theta++){
+//     let k = theta;
+//     let r = width/2 * sin(n*k);
+//     let x = r * cos(k);
+//     let y = r * sin(k);
+//     vertex(x, y);
+//   }
+//   endShape();
   pop();
   
   fill(0);
