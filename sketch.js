@@ -7,6 +7,10 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(random(255),random(255),random(255));
   frameRate(30);
+  push();
+  translate(windowWidth/2 - 110, windowHeight/2)
+  textFont('Monaco', 32)
+  text('click/touch', 0, 0);
 }
 
 function colrs(){
@@ -20,6 +24,8 @@ function draw() {
   
   n = mouseY
   d = mouseX
+  
+  
 }
 
 function mousePressed() {
@@ -41,23 +47,23 @@ function mousePressed() {
   }
   endShape();
 
-//   beginShape();
-//   noFill();
-//   stroke(random(255), random(255), random(255));
-//   for(let theta = 0; theta <= 360; theta++){
-//     let k = theta;
-//     let r = width/2 * sin(n*k);
-//     let x = r * cos(k);
-//     let y = r * sin(k);
-//     vertex(x, y);
-//   }
-//   endShape();
+  // beginShape();
+  // noFill();
+  // stroke(random(255), random(255), random(255));
+  // for(let theta = 0; theta <= 360; theta++){
+  //   let k = theta;
+  //   let r = width/2 * sin(n*k);
+  //   let x = r * cos(k);
+  //   let y = r * sin(k);
+  //   vertex(x, y);
+  // }
+  // endShape();
   pop();
   
   fill(0);
   noStroke(0);
   strokeWeight(1);
-  textFont('Monaco', 12);
+  textFont('Monaco', 18);
   text('n:' + str(n), 10, height - 10);
-  text('d:' + str(d), 60, height - 10);
+  text('d:' + str(d), 80, height - 10);
 }
