@@ -11,6 +11,7 @@ function setup() {
   translate(windowWidth/2 - 110, windowHeight/2)
   textFont('Monaco', 32)
   text('click/touch', 0, 0);
+  pop();
 }
 
 function colrs(){
