@@ -7,7 +7,7 @@ w=W/2
 beginShape()
 translate(w,w)
 for (t=360;t--;){
-n+=.000000013;d+=.00000001
+n+=.00000001;d+=.00000001
 k=t*d
 r=(w)*sin(n*k)
 x=r*cos(k)
