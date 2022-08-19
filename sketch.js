@@ -1,6 +1,6 @@
 // https://en.wikipedia.org/wiki/Maurer_rose#p5.js_Code
 setup=_=>{createCanvas(W=1000,W);background(0);d=random(2,13);n=random(4,54)}
-draw=_=>{background(0,50);noFill()
+draw=_=>{background(0,40);noFill()
 stroke(``)
 frameRate(12)
 w=W/2
