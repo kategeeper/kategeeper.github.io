@@ -1,76 +1,16 @@
 // https://en.wikipedia.org/wiki/Maurer_rose#p5.js_Code
 
-let n;
-let d;
-
-function setup() {
-  translate(windowWidth / 2, windowHeight / 2);
-  createCanvas(windowWidth, windowHeight);
-
-  background(random(255), random(255), random(255));
-  frameRate(30);
-  push();
-  //translate(windowWidth/2 - 100, windowHeight/2)
-  textFont("Monaco", 13);
-  fill(0);
-  text("click or touch", 10, 20);
-  pop();
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
-function colrs() {
-  let rD = random(255);
-  let gR = random(255);
-  let bL = random(255);
-}
-
-function draw() {
-  colrs();
-
-  n = mouseY;
-  d = mouseX;
-}
-
-function mousePressed() {
-  push();
-  clear();
-  translate(windowWidth / 2, windowHeight / 2);
-  background(random(255), random(255), random(255));
-
-  beginShape();
-  fill(random(255), random(255), random(255));
-  stroke(random(255), random(255), random(255));
-  angleMode(DEGREES);
-
-  for (let theta = 0; theta <= 360; theta++) {
-    let k = theta * d;
-    let r = (width / 4) * sin(n * k);
-    let x = r * cos(k);
-    let y = r * sin(k);
-    vertex(x, y);
-  }
-  endShape();
-
-  // beginShape();
-  // noFill();
-  // stroke(random(255), random(255), random(255));
-  // for(let theta = 0; theta <= 360; theta++){
-  //   let k = theta;
-  //   let r = width/2 * sin(n*k);
-  //   let x = r * cos(k);
-  //   let y = r * sin(k);
-  //   vertex(x, y);
-  // }
-  // endShape();
-  pop();
-
-  fill(0);
-  noStroke(0);
-  strokeWeight(1);
-  textFont("Monaco", 13);
-  text("n:" + round(str(n)), 10, height - 25);
-  text("d:" + round(str(d)), 10, height - 10);
-}
+setup=_=>{createCanvas(W=600,W);background(0);d=random(2,9);n=random(3,9)}
+draw=_=>{background(0,50);noFill()
+stroke(``)
+frameRate(12)
+w=W/2
+beginShape()
+translate(w,w)
+for (t=360;t--;){
+n+=.000000013;d+=.00000001
+k=t*d
+r=(w)*sin(n*k)
+x=r*cos(k)
+y=r*sin(k)
+vertex(x,y)}endShape()}
