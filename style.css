@@ -7,6 +7,8 @@ html, body {
 }
 img {
   display: block;
+  margin: 0;
+  padding: 0;
   align: left;
 }
 canvas {
