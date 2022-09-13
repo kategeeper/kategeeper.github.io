@@ -3,9 +3,11 @@ html, body {
   color: #aaa;
   margin: 0;
   padding: 0;
+  line-height:10px
 }
 img {
   display: block;
+  align: left;
 }
 canvas {
   display: block;
