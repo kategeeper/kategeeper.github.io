@@ -1,51 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-    <script src="flwr.js"></script>
-    <script src="scrollslice.js"></script>
-  </head>
-  <body>
-    <main>
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🥝</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+  <script src="flwr.js"></script>
+  <!--
+  <script src="scrollslice.js"></script>
+  -->
+  <style>
+    @import url('./base.css');
+    @import url('./basic-grid.css');
+  </style>
+</head>
+<body>
 
-    <!-- -->
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <div id="ScrollSlice"></div>
-    <!-- <img src="https://live.staticflickr.com/65535/52556883867_97a24d726b_o.gif" alt=""> -->
-    <!-- <img src="https://live.staticflickr.com/65535/52478346022_d46089a222_b.jpg" alt=""> -->
-    <img src="https://live.staticflickr.com/65535/52479308905_31eb2a8785_b.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52478345852_375cf74676_b.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52479126474_b2c236fe0b_b.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52479394858_694416ace9_b.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52479395528_e161470f00_b.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52366775425_504c685caa_c.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354579264_6e42cf157d.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354535014_3b254741cd.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354535114_d2591c2ab8.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354457298_ae5123cfaf.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52353316797_ddfd2264b3.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52353271607_0038364817.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354642510_a6dd1c0f84_c.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354533834_263efb3182.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354250946_668742fbda.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354251256_277fa2743a.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354618754_768c11ab4e_c.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354618649_b9d46dcb28_c.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52353314767_c5639b232c.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354581199_444992d060.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52353356917_14f5c748c9.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354619044_bd064c32c1_c.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354298631_b7fb91e32f_c.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52354299131_ff3f3331ae.jpg" alt="">
-    <img src="https://live.staticflickr.com/65535/52353358162_54a337dca3.jpg" alt="">
-    <div id="Flwr"></div>
-   
-  </body>
+  <div class="basic-grid">
+
+    <div 
+    class="card"
+    style="background-image:url()"
+    id="Flwr"
+    >
+    </div>
+
+
+    <div 
+      class="card"
+      style="background-image:url(https://live.staticflickr.com/65535/52354298631_b7fb91e32f_c.jpg)"
+    >
+    </div>
+
+
+    <div 
+      class="card"
+      style="background-image:url(https://live.staticflickr.com/65535/52479394858_694416ace9_b.jpg)"
+    >
+    </div>
+
+
+    <div 
+      class="card"
+      style="background-image:url(https://live.staticflickr.com/65535/52479126474_b2c236fe0b_b.jpg)"
+    >
+    </div>
+
+
+    <div 
+      class="card"
+      style="background-image:url(https://live.staticflickr.com/65535/52479395528_e161470f00_b.jpg)"
+    >
+    </div>
+
+
+    <div 
+    class="card"
+    style="background-image:url(https://live.staticflickr.com/65535/52366775425_504c685caa_c.jpg)"
+    >
+    </div>
+
+
+    <div 
+      class="card"
+      style="background-image:url(https://live.staticflickr.com/65535/52354535014_3b254741cd.jpg)"
+    >
+    </div>
+
+
+    <div 
+      class="card"
+      style="background-image:url(https://live.staticflickr.com/65535/52354535114_d2591c2ab8.jpg)"
+    >
+    </div>
+
+
+    <div 
+    class="card"
+    style="background-image:url(https://live.staticflickr.com/65535/52354618754_768c11ab4e_c.jpg)"
+    >
+    </div>
+
+
+    <div 
+    class="card"
+    style="background-image:url(https://live.staticflickr.com/65535/52353314767_c5639b232c.jpg)"
+    >
+    </div>
+
+
+    <div 
+    class="card"
+    style="background-image:url(https://live.staticflickr.com/65535/52354618649_b9d46dcb28_c.jpg)"
+    >
+    </div>
+
+
+    <div 
+    class="card"
+    style="background-image:url(https://live.staticflickr.com/65535/52479308905_31eb2a8785_b.jpg)"
+    >
+    </div> 
+
+    <!--
+    <div 
+    id="ScrollSlice"
+    class="card"
+    >
+    </div>
+    --> 
+
+
+  </div>
+
+</body>
 </html>
