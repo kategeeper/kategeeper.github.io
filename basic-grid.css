@@ -1,6 +1,0 @@
-.basic-grid {
-  display: grid;
-  gap: 0rem;
-  grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
-  grid-auto-rows: 267px;
-}
