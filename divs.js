@@ -3,10 +3,7 @@ function container(d) {
   let divArray = [];
   let num = 36;
   let imgs = [
-    //'url("")',
     'url("https://live.staticflickr.com/65535/52478345852_375cf74676_b.jpg")',
-    // 'url("https://live.staticflickr.com/65535/52354618649_b9d46dcb28_b.jpg")',
-    // 'url("https://live.staticflickr.com/65535/52354298631_b7fb91e32f_b.jpg")',
     'url("https://live.staticflickr.com/65535/52354535114_d2591c2ab8_b.jpg")',
     'url("https://live.staticflickr.com/65535/52457164432_135ffd9876_b.jpg")',
     'url("https://live.staticflickr.com/65535/52479395528_e161470f00_b.jpg")',
